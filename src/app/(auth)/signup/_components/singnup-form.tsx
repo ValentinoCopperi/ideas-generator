@@ -80,7 +80,7 @@ const SignUpForm = () => {
                 </div>
 
                 <div className="flex flex-col justify-center items-center pb-3">
-                    <p>Don't have an account?</p>
+                    <p>Dont have an account?</p>
                     <Link
                         href="/register"
                         className="py-1 font-semibold underline hover:text-blue-600 transition-colors"

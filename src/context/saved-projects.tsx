@@ -1,7 +1,7 @@
 "use client"
 
 import { getSavedIdeasAction } from "@/actions/ideas/ideas"
-import { FilteredProject, Project } from "@/types/ideas"
+import { FilteredProject } from "@/types/ideas"
 import { getAllTechnologies } from "@/utils/get-all-technologies"
 import { createContext, Dispatch, SetStateAction, useContext, useEffect, useState } from "react"
 

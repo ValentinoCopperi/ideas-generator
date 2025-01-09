@@ -26,7 +26,7 @@ const MyIdeas = async ({ searchParams }: MyIdeasProps) => {
                     My Saved Project Ideas
                 </h1>
                 <p className="text-center max-w-lg mx-auto mb-8">
-                    Here are the ideas you've saved for your next big project. Explore them, refine them, and bring them to life!
+                    Here are the ideas you have saved for your next big project. Explore them, refine them, and bring them to life!
                 </p>
 
                 <div className="w-full flex flex-col lg:flex-row min-h-[600px] space-y-4 lg:space-y-0">

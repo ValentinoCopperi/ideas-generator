@@ -18,7 +18,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { usePathname, useRouter, useSearchParams } from "next/navigation"
+import {  useRouter, useSearchParams } from "next/navigation"
 
 interface Props {
   technologies: string[] | null
