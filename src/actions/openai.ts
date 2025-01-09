@@ -24,7 +24,7 @@ export const genereteIdeas = async (data: ResponseData): Promise<Ideas> => {
         const { type, difficulty, theme, additionalInfo } = data;
 
         const response = await openai.chat.completions.create({
-            model: "gpt-4o",
+            model: "gpt-4",
             messages: [
                 {
                     role: "system", content: systemMessage
