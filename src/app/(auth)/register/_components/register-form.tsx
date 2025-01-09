@@ -7,9 +7,8 @@ import { RegisterFormState, registerSchema } from "@/lib/zod/register-form-schem
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Separator } from "@radix-ui/react-dropdown-menu"
 import { ArrowLeft, } from "lucide-react"
-import router from "next/router"
 import { useActionState } from "react"
-import { Form, FormProvider, useForm } from "react-hook-form"
+import { FormProvider, useForm } from "react-hook-form"
 import { z } from "zod"
 import TextAreaInput from "./text-area-input"
 import Link from "next/link"
@@ -19,7 +18,7 @@ import { signIn } from "next-auth/react"
 
 export const RegisterForm = () => {
 
-    const [state, action, peding] = useActionState<RegisterFormState, FormData>(registerAction, null)
+    const [state, action] = useActionState<RegisterFormState, FormData>(registerAction, null)
 
     const router = useRouter()
 

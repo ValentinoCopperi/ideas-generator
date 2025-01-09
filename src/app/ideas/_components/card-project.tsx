@@ -7,16 +7,14 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Project } from "@/types/ideas"
-import { FC, useEffect, useState } from "react"
+import { FC, useState } from "react"
 import ProjectDetails from "./project-details"
 import { Bookmark, BookmarkX, LoaderIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { saveIdeaAction } from "@/actions/ideas/save-idea"
 import { toast } from 'sonner'
-import { isProjectSaved } from "@/utils/is-project-saved"
 import { usePathname, useRouter } from "next/navigation"
 import { deleteIdeaAction } from "@/actions/ideas/delete-idea"
-import { useSavedProjects } from "@/context/saved-projects"
 import { Badge } from "@/components/ui/badge"
 
 interface Props {

@@ -12,11 +12,11 @@ export const deleteIdeaAction = async (project: Project) => {
     try {
 
 
-        const { isAuth, id_user } = await isLoggedIn();
+        const { id_user } = await isLoggedIn();
 
         if (!id_user) return;
 
-        const response = await sql`
+        await sql`
         DELETE FROM saved_ideas
         WHERE id_user = ${id_user} AND id = ${project.id};
         `;

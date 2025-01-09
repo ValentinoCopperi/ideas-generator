@@ -7,7 +7,6 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import './custom-scrollbar.css'
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
 
 
 

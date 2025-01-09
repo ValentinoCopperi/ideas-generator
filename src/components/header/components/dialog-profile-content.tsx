@@ -1,11 +1,10 @@
 "use client"
 
-import { Button } from '@/components/ui/button'
-import { DialogHeader, DialogFooter } from '@/components/ui/dialog'
+import { DialogHeader } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { User } from '@/types/user'
-import { DialogContent, DialogTitle, DialogDescription } from '@radix-ui/react-dialog'
+import { DialogTitle, DialogDescription } from '@radix-ui/react-dialog'
 
 const DialogProfileContent = ({ user }: { user: User }) => {
 

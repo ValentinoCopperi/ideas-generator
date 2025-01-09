@@ -4,19 +4,13 @@ import { Button } from "@/components/ui/button"
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
-    DialogFooter,
-    DialogHeader,
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
-import { DropdownMenuItem } from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import { User } from "@/types/user"
 import DialogProfileContent from "./dialog-profile-content"
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert"
-import { Terminal, UserCircle2 } from "lucide-react"
+import {  UserCircle2 } from "lucide-react"
 import Link from "next/link"
 
 interface Props {

@@ -1,16 +1,14 @@
 import { getSavedIdeasAction, getSavedTechnologiesAction } from "@/actions/ideas/ideas"
 import Container from "@/components/Container";
-import { Project } from "@/types/ideas"
 import { IdeasGrid } from "./_components/ideas-grid";
 import { FilterCard } from "./_components/filters-card";
-import { getAllTechnologies } from "@/utils/get-all-technologies";
 import { SavedProjectsProvider } from "@/context/saved-projects";
-import { Suspense } from "react";
 
 interface MyIdeasProps {
     searchParams?: {
         technology?: string;
         difficulty?: string;
+        query? : string
     };
 }
 

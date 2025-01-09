@@ -1,7 +1,4 @@
-import { registerAction } from "@/actions/auth/register";
-import { signUpAction, signUpActionNextAuth } from "@/actions/auth/signup";
-import { getUserId } from "@/actions/user/user-actions";
-import { createSession } from "@/lib/session/session";
+import { signUpActionNextAuth } from "@/actions/auth/signup";
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google"
 

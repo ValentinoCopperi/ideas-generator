@@ -3,7 +3,6 @@
 import { sql } from "@/lib/database/db"
 import { RegisterFormState, registerSchema } from "@/lib/zod/register-form-schema"
 import { User } from "@/types/user"
-import { redirect } from "next/navigation"
 
 export const registerAction = async (prevState: RegisterFormState, formData: FormData): Promise<RegisterFormState> => {
     
@@ -31,10 +30,10 @@ export const registerAction = async (prevState: RegisterFormState, formData: For
             }
         }
 
-        const response = await sql`
+        await sql`
             INSERT INTO users_table (name,email,password) VALUES (${username},${email},${password})
         `
-
+        
         return {
             message : "User Created Succesfully!"
         }
@@ -72,7 +71,7 @@ export const registerActionNextAuth = async (prevState: RegisterFormState, formD
             }
         }
 
-        const response = await sql`
+        await sql`
             INSERT INTO users_table (name,email,password) VALUES (${username},${email},${password})
         `
 

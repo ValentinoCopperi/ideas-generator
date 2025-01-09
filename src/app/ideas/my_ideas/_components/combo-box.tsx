@@ -28,7 +28,6 @@ export function Combobox({ technologies }: Props) {
 
   const router = useRouter()
   const searchParams = useSearchParams()
-  const pathname = usePathname()
 
   const [open, setOpen] = React.useState(false)
   const [value, setValue] = React.useState("")

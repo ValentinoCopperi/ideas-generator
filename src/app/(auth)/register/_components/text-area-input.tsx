@@ -1,7 +1,7 @@
-import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { RegisterFormState } from '@/lib/zod/register-form-schema';
-import { useState, type FC } from 'react'
+import {  type FC } from 'react'
 
 
 type names = 'email' | 'username' | 'password' | 'confirmPassword'

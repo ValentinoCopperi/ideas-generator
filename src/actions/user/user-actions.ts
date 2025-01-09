@@ -1,7 +1,6 @@
 "use server"
 
 import { sql } from "@/lib/database/db";
-import { verifySession } from "@/lib/session/dal";
 import { decrypt } from "@/lib/session/session";
 import { User } from "@/types/user";
 import { cookies } from "next/headers";

@@ -1,7 +1,6 @@
 'use client'
 
 import Container from '@/components/Container'
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import AuthBanner from './_components/auth-banner'
 

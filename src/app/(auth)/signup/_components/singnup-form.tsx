@@ -9,7 +9,6 @@ import { ArrowLeft } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-import TextAreaInput from "./text-area-input-email"
 import SubmitBtn from "@/app/ideas/_components/submit-btn"
 import { useActionState } from "react"
 import { signUpAction } from "@/actions/auth/signup"
@@ -17,13 +16,13 @@ import TextAreaInputEmail from "./text-area-input-email"
 import TextAreaInputPassword from "./text-area-input-password"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { signIn, useSession } from "next-auth/react"
+import { signIn } from "next-auth/react"
 
 
 
 const SignUpForm = () => {
 
-    const [state, action, pending] = useActionState<SignUpFormState, FormData>(
+    const [state, action] = useActionState<SignUpFormState, FormData>(
         signUpAction,
         null
     );

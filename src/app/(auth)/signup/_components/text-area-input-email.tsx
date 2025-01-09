@@ -1,13 +1,7 @@
-import { FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import { Separator } from '@/components/ui/separator';
-import { Textarea } from '@/components/ui/textarea';
-import { signupFormSchema, SignUpFormState } from '@/lib/zod/signup-form-schema';
-import { StateSingup } from '@/types/user';
-import { Eye, EyeClosed, EyeOff } from 'lucide-react';
-import { useState, type FC } from 'react'
-import { UseFormReturn } from 'react-hook-form';
-import { z } from 'zod';
+import {  SignUpFormState } from '@/lib/zod/signup-form-schema';
+import {  type FC } from 'react'
 
 
 

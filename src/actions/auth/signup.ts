@@ -5,8 +5,7 @@ import { createSession } from "@/lib/session/session"
 import { signupFormSchema, SignUpFormState } from "@/lib/zod/signup-form-schema"
 import { User } from "@/types/user"
 import { redirect } from "next/navigation"
-import { toast } from "sonner"
-import { registerAction, registerActionNextAuth } from "./register"
+import {registerActionNextAuth } from "./register"
 import { getUserId } from "../user/user-actions"
 
 export const signUpAction = async (prevState: SignUpFormState, formData: FormData) => {
