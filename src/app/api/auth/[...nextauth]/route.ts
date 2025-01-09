@@ -49,7 +49,7 @@ const handler = NextAuth({
                 if (result?.errors === undefined) {
                     return true
                 } else {
-                    console.error("Erro registering user:", result?.message)
+                    console.error("Errore registering user:", result?.message)
                     return false
                 }
             }
