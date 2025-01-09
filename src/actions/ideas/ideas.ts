@@ -5,7 +5,7 @@ import { isLoggedIn } from "@/lib/session/dal";
 import { FilteredProject} from "@/types/ideas";
 import { getAllTechnologies } from "@/utils/get-all-technologies";
 
-export const getSavedIdeasAction = async ( filters? :  { query? : string , technology? : string , difficulty? : string }) => {
+export const getSavedIdeasAction = async ( filters? :  { query? : string , technology? : string , difficulty? : string }) : Promise<FilteredProject[]>=> {
 
     try {
         

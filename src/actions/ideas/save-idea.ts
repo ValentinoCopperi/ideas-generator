@@ -16,7 +16,12 @@ export const saveIdeaAction = async (project: Project) => {
 
     if (!id_user) return;
 
-    const techonologies: string[] = project.suggested_technologies.map(proj => proj.name)
+    const techonologies: string[] = project.suggested_technologies.map(proj => {
+      if(typeof proj === "string"){
+        return proj
+      }
+      return proj.name
+    })
 
     await sql`
             INSERT INTO saved_ideas (

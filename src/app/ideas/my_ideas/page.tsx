@@ -4,18 +4,15 @@ import { IdeasGrid } from "./_components/ideas-grid";
 import { FilterCard } from "./_components/filters-card";
 import { SavedProjectsProvider } from "@/context/saved-projects";
 
-interface MyIdeasProps {
-    searchParams?: {
-        technology?: string;
-        difficulty?: string;
-        query? : string
-    };
-}
-
-const MyIdeas = async ({ searchParams }: MyIdeasProps) => {
 
 
-    const saved_projects = await getSavedIdeasAction(await searchParams)
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>
+
+
+const MyIdeas = async (props: { searchParams: SearchParams}) => {
+
+    const searchParams = await props.searchParams
+    const saved_projects = await getSavedIdeasAction(searchParams)
     const used_technologies = await getSavedTechnologiesAction()
 
 

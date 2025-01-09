@@ -10,22 +10,17 @@ export const deleteIdeaAction = async (project: Project) => {
 
 
     try {
-
-
         const { id_user } = await isLoggedIn();
-
         if (!id_user) return;
-
+        
         await sql`
-        DELETE FROM saved_ideas
-        WHERE id_user = ${id_user} AND id = ${project.id};
+            DELETE FROM saved_ideas
+            WHERE id_user = ${id_user}
+            AND id = ${project.id}
         `;
-
-
     } catch (error) {
-        console.log(error)
-        throw error
+        console.log(error);
+        throw error;
     }
-
 }
 
