@@ -59,7 +59,7 @@ export function Combobox({ technologies }: Props) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between"
+          className="w-full md:w-[200px] justify-between"
         >
           {value
             ? technologies?.find((tech) => tech === value && tech)
@@ -67,7 +67,7 @@ export function Combobox({ technologies }: Props) {
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0">
+      <PopoverContent className="w-full md:w-[200px] p-0">
         <Command className="overflow-hidden">
           <CommandInput placeholder="Search framework..." />
           <CommandList>
