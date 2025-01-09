@@ -9,7 +9,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const openai = new OpenAI({
-    apiKey : process.env.OPENAI_API_KEY
+    apiKey : process.env.OPENAI_API_KEY,
+    baseURL: "https://api.openai.com/v1",
+    organization: "org-4ICD3WXJbFDlJQoQHedmPiBG",
+    project: "proj_T3YCN5oFDGrpKWD0V9ifDpTJ",
 });
 
 export const genereteIdeas = async (data: ResponseData): Promise<Ideas> => {
