@@ -67,8 +67,8 @@ export function Combobox({ technologies }: Props) {
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0 overflow-hidden">
-        <Command>
+      <PopoverContent className="w-[200px] p-0">
+        <Command className="overflow-hidden">
           <CommandInput placeholder="Search framework..." />
           <CommandList>
             <CommandEmpty>No framework found.</CommandEmpty>
