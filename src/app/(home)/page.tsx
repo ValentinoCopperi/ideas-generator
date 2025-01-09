@@ -11,7 +11,7 @@ export default function Home() {
           <div>
             <HeroContainer/>
             <FloatingBox initialPosition="-100%" className="-left-8 top-24 bg-[#fff9b1]" />
-            <FloatingBox initialPosition="100%" className="-right-8 bottom-24 bg-[#fff9b1]" />
+            <FloatingBox initialPosition="100%" className="-right-8 bottom-12 bg-[#fff9b1]" />
           </div>
       </Container>
     </>

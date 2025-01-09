@@ -24,7 +24,7 @@ export const DifficultyFilterCheckbox = () => {
     }
 
     return (
-        <RadioGroup className="flex space-x-3" defaultValue="all">
+        <RadioGroup className="flex flex-wrap justify-center lg:justify-start space-x-3" defaultValue="all">
             <div className="flex items-center space-x-2" onClick={() => handleDifficultyParams()}>
                 <RadioGroupItem
                     value="all"
